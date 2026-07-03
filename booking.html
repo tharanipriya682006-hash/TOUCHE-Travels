@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Your Trip — TOUCHÉ Travels</title>
+<meta name="description" content="Book your next trip with TOUCHÉ Travels — fill in your destination, travel dates and preferences and our planners will take it from there.">
+<meta name="keywords" content="book trip, travel booking Chennai, holiday reservation, TOUCHÉ Travels booking">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="brand">TOUCHÉ<span class="accent-dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="booking.html" class="nav-cta">Book Now</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-backdrop"></div>
+
+<section class="hero hero-small">
+  <div class="hero-flight-line"></div>
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Booking</p>
+    <h1>Let's put your trip <em>on paper</em>.</h1>
+    <p class="lead">Fill in the details below — a planner will call or email you within one business day with a tailored itinerary and quote.</p>
+    <p class="breadcrumb"><a href="index.html">Home</a><span>/</span>Booking</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="grid grid-2 split-panel-tight">
+
+      <div class="reveal">
+        <div class="form-card">
+          <div class="stamp mb-lg"><span class="stamp-value">✓</span><span class="stamp-label">Booking</span></div>
+          <h2 class="heading-md mb-sm">Trip Details</h2>
+          <p class="text-muted mb-3xl text-body-sm">Fields marked <span class="text-pink">*</span> are required.</p>
+
+          <form data-validate novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="b-name">Full Name <span class="req">*</span></label>
+                <input type="text" id="b-name" name="name" data-rule="required" placeholder="Your full name">
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="b-email">Email <span class="req">*</span></label>
+                <input type="email" id="b-email" name="email" data-rule="required email" placeholder="you@example.com">
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="b-phone">Phone <span class="req">*</span></label>
+                <input type="tel" id="b-phone" name="phone" data-rule="required phone" placeholder="+91 98765 43210">
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="b-destination">Destination <span class="req">*</span></label>
+                <select id="b-destination" name="destination" data-rule="required">
+                  <option value="">Select a destination</option>
+                  <option>Paris</option>
+                  <option>Maldives</option>
+                  <option>Dubai</option>
+                  <option>Bali</option>
+                  <option>Switzerland</option>
+                  <option>Japan</option>
+                  <option>Italy</option>
+                  <option>Singapore</option>
+                  <option>Other / Custom</option>
+                </select>
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="b-date">Travel Date <span class="req">*</span></label>
+                <input type="date" id="b-date" name="travel_date" data-rule="required futuredate">
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group">
+                <label for="b-travelers">Number of Travelers <span class="req">*</span></label>
+                <input type="number" id="b-travelers" name="travelers" min="1" max="20" value="2" data-rule="required">
+                <span class="error-msg"></span>
+              </div>
+              <div class="form-group full">
+                <label for="b-package">Preferred Package</label>
+                <select id="b-package" name="package">
+                  <option value="">No preference / not sure yet</option>
+                  <option>Beach</option>
+                  <option>Adventure</option>
+                  <option>Luxury</option>
+                  <option>Family</option>
+                  <option>Honeymoon</option>
+                  <option>International</option>
+                </select>
+              </div>
+              <div class="form-group full">
+                <label for="b-message">Message</label>
+                <textarea id="b-message" name="message" rows="4" placeholder="Tell us anything that'll help us plan — budget range, must-sees, travel style..."></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary form-actions-lg">Book Now</button>
+          </form>
+          <div class="form-success">✓ Thank you! Your request has been received — a planner will reach out shortly.</div>
+        </div>
+      </div>
+
+      <div class="reveal flex-col gap-md">
+        <div class="mv-card bg-pink-light">
+          <h3 class="heading-xxs mb-md">What happens after you submit?</h3>
+          <div class="info-card">
+            <div class="feature-icon bg-white-solid">1</div>
+            <div><h4 class="heading-tinier">We review your details</h4><p>Usually within a few hours during business days.</p></div>
+          </div>
+          <div class="info-card">
+            <div class="feature-icon bg-white-solid">2</div>
+            <div><h4 class="heading-tinier">A planner calls or emails you</h4><p>To confirm dates, budget and preferences.</p></div>
+          </div>
+          <div class="info-card">
+            <div class="feature-icon bg-white-solid">3</div>
+            <div><h4 class="heading-tinier">You receive a full itinerary</h4><p>With transparent pricing — no hidden add-ons.</p></div>
+          </div>
+        </div>
+        <div class="mv-card">
+          <h4 class="heading-tiny mb-sm">Prefer to talk first?</h4>
+          <p class="text-muted text-body-sm2">Call us at <strong>+91 XXXXX XXXXX</strong> or visit our Chennai office, Monday–Saturday, 10am–7pm.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">TOUCHÉ<span class="accent-dot text-gold">.</span></a>
+        <p>A boutique travel studio in Chennai, planning trips people actually remember.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="packages.html">Packages</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>More</h5>
+        <ul>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li>+91 XXXXX XXXXX</li>
+          <li>info@touchetravels.com</li>
+          <li>Chennai, India</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span data-year>2026</span> TOUCHÉ Travels. All rights reserved.</div>
+  </div>
+</footer>
+
+<button class="scroll-top" aria-label="Scroll to top">↑</button>
+<script src="js/script.js"></script>
+</body>
+</html>
